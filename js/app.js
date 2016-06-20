@@ -24,7 +24,7 @@ var allFeeds = [
 ];
 
 /* This function starts up our application. The Google Feed
- * Reader API is loaded asynchonously and will then call this
+ * Reader API is loaded asynchronously and will then call this
  * function when the API is loaded.
  */
 function init() {
