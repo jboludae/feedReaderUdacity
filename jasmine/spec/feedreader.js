@@ -65,10 +65,14 @@ $(function() {
           * check that when menuIcon is clicked class menu-hidden
           * is removed from the body element.
           */
-        it('menu changes visibility when menu icon clicked', function(){
+        it('menu shows when menu icon clicked', function(){
             $menuIcon.trigger('click');
             expect($body.hasClass("menu-hidden")).toBe(false);
+        });        
+
+        it('menu hides when menu icon clicked again', function(){
             $menuIcon.trigger('click');
+            expect($body.hasClass("menu-hidden")).toBe(true);
         });
     });
 
